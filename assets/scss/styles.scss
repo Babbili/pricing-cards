@@ -10,7 +10,6 @@
   --title-color: hsl(var(--hue-color), 24%, 15%);
   --text-color: hsl(var(--hue-color), 12%, 35%);
   --text-color-light: hsl(var(--hue-color), 12%, 65%);
-  --white-color: #fff;
   --body-color: hsl(var(--hue-color), 100%, 98%);
   --container-color: #fff;
   --gradient-background: linear-gradient(
@@ -168,7 +167,7 @@ img {
     }
     &-number,
     &-month {
-      color: var(--white-color);
+      color: var(--container-color);
     }
 
     &::after,
@@ -179,7 +178,7 @@ img {
     &::after {
       width: 100%;
       height: 14px;
-      background-color: var(--white-color);
+      background-color: var(--container-color);
       left: 0;
       bottom: 0;
       clip-path: polygon(0 100%, 50% 0, 100% 100%);
@@ -214,7 +213,7 @@ img {
     border-radius: 0.5rem;
     font-weight: 500;
     background: var(--gradient-background);
-    color: var(--white-color);
+    color: var(--container-color);
     cursor: pointer;
     transition: 0.4s;
 
