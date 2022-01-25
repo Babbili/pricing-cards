@@ -1,2 +1,3 @@
 # Pricing Cards
-responsive cards HTML & CSS, gradient colors button, ux/ui
+responsive cards, gradient colors, ux/ui
+dark/light mode

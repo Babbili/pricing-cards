@@ -11,6 +11,12 @@ if(selectedTheme) {
     document.body.classList[selectedTheme == 'dark' ? 'add' : 'remove']('dark')
     moon.classList[selectedIcon == 'sun' ? 'add' : 'remove']('hide')
     sun.classList[selectedIcon == 'sun' ? 'remove' : 'add']('hide')
+} else if(window.matchMedia('(prefers-color-scheme: dark)').matches)  {
+    localStorage.setItem('selected-theme', 'dark')
+    localStorage.setItem('selected-icon', 'sun')
+    moon.classList.add('hide')
+    sun.classList.remove('hide')
+    document.body.classList.add('dark')
 }
 
 themeToggle.addEventListener('click', () => {
