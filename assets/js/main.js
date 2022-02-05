@@ -26,3 +26,11 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+let D = new Date(1642916219)
+let m = D.getMonth() + 1
+let y = D.getFullYear()
+let day = D.getDate()
+
+
+console.log(m, day, y)
